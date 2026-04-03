@@ -15,4 +15,10 @@
       <ProjectReference Include="..\TaskManagement.Infrastructure\TaskManagement.Infrastructure.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Configurations\" />
+      <Folder Include="Controllers\" />
+      <Folder Include="Middleware\" />
+    </ItemGroup>
+
 </Project>
