@@ -4,6 +4,126 @@
     "D:\\dev\\wsdotnet\\task\\TaskManagement\\UnitTests\\UnitTests.csproj": {}
   },
   "projects": {
+    "D:\\dev\\wsdotnet\\task\\TaskManagement\\TaskManagement.Application\\TaskManagement.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\dev\\wsdotnet\\task\\TaskManagement\\TaskManagement.Application\\TaskManagement.Application.csproj",
+        "projectName": "TaskManagement.Application",
+        "projectPath": "D:\\dev\\wsdotnet\\task\\TaskManagement\\TaskManagement.Application\\TaskManagement.Application.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "D:\\dev\\wsdotnet\\task\\TaskManagement\\TaskManagement.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\dev\\wsdotnet\\task\\TaskManagement\\TaskManagement.Domain\\TaskManagement.Domain.csproj": {
+                "projectPath": "D:\\dev\\wsdotnet\\task\\TaskManagement\\TaskManagement.Domain\\TaskManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.419/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\dev\\wsdotnet\\task\\TaskManagement\\TaskManagement.Domain\\TaskManagement.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\dev\\wsdotnet\\task\\TaskManagement\\TaskManagement.Domain\\TaskManagement.Domain.csproj",
+        "projectName": "TaskManagement.Domain",
+        "projectPath": "D:\\dev\\wsdotnet\\task\\TaskManagement\\TaskManagement.Domain\\TaskManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "D:\\dev\\wsdotnet\\task\\TaskManagement\\TaskManagement.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.419/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\dev\\wsdotnet\\task\\TaskManagement\\UnitTests\\UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -25,7 +145,14 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\dev\\wsdotnet\\task\\TaskManagement\\TaskManagement.Application\\TaskManagement.Application.csproj": {
+                "projectPath": "D:\\dev\\wsdotnet\\task\\TaskManagement\\TaskManagement.Application\\TaskManagement.Application.csproj"
+              },
+              "D:\\dev\\wsdotnet\\task\\TaskManagement\\TaskManagement.Domain\\TaskManagement.Domain.csproj": {
+                "projectPath": "D:\\dev\\wsdotnet\\task\\TaskManagement\\TaskManagement.Domain\\TaskManagement.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

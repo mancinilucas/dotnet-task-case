@@ -21,4 +21,9 @@
         <Using Include="NUnit.Framework"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\TaskManagement.Application\TaskManagement.Application.csproj" />
+      <ProjectReference Include="..\TaskManagement.Domain\TaskManagement.Domain.csproj" />
+    </ItemGroup>
+
 </Project>
