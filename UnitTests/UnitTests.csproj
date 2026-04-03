@@ -26,4 +26,9 @@
       <ProjectReference Include="..\TaskManagement.Domain\TaskManagement.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Application\" />
+      <Folder Include="Domain\" />
+    </ItemGroup>
+
 </Project>
