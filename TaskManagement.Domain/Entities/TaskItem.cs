@@ -1,5 +1,5 @@
 ﻿using TaskManagement.Domain.Exceptions;
-using TaskStatus = TaskManagement.Domain.Enums.TaskStatus;
+using TaskManagement.Domain.Enums;
 
 namespace TaskManagement.Domain.Entities;
 
@@ -8,7 +8,7 @@ public class TaskItem
     public Guid Id { get; private set; }
     public string Title { get; private set; }
     public string Description { get; private set; }
-    public TaskStatus Status { get; private set; }
+    public TaskItemStatus Status { get; private set; }
     public Guid? AssignedUserId { get; set; }
     public DateTime CreatedAtUtc { get; private set; }
 
@@ -20,24 +20,24 @@ public class TaskItem
         Id = Guid.NewGuid();
         Title = title;
         Description = description;
-        Status = TaskStatus.Pending;
+        Status = TaskItemStatus.Pending;
         CreatedAtUtc = DateTime.UtcNow;
     }
 
     public void Start()
     {
-        if(Status != TaskStatus.Pending)
+        if(Status != TaskItemStatus.Pending)
             throw new DomainException("Only pending tasks can be started.");
         
-        Status = TaskStatus.InProgress;
+        Status = TaskItemStatus.InProgress;
     }
 
     public void Complete()
     {
-        if(Status != TaskStatus.InProgress)
+        if(Status != TaskItemStatus.InProgress)
             throw new DomainException("Only tasks in progress can be completed.");
 
-        Status = TaskStatus.Done;
+        Status = TaskItemStatus.Done;
     }
     
     public void AssignUser(Guid userId)
