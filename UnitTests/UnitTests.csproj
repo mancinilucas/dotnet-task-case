@@ -13,6 +13,7 @@
         <PackageReference Include="coverlet.collector" Version="6.0.0"/>
         <PackageReference Include="FluentAssertions" Version="8.9.0" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0"/>
+        <PackageReference Include="Moq" Version="4.20.72" />
         <PackageReference Include="NUnit" Version="3.14.0"/>
         <PackageReference Include="NUnit.Analyzers" Version="3.9.0"/>
         <PackageReference Include="NUnit3TestAdapter" Version="4.5.0"/>
@@ -25,10 +26,6 @@
     <ItemGroup>
       <ProjectReference Include="..\TaskManagement.Application\TaskManagement.Application.csproj" />
       <ProjectReference Include="..\TaskManagement.Domain\TaskManagement.Domain.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Application\" />
     </ItemGroup>
 
 </Project>
